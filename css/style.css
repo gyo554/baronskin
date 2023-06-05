@@ -1,0 +1,984 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700;900&family=Poppins:wght@400;500&family=Roboto:wght@100;300;700&display=swap');
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+
+
+/* 
+
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/* 레이아웃 */
+
+#wrap{}
+.inner_wrap{
+	width:1200px;
+	min-width: 1200px;
+}
+
+.center{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.float_r{
+	float: right;
+}
+
+.float_l{
+	float: left;
+}
+
+.tac{
+	text-align: center;
+}
+
+/* TYPOGRAPHY */
+
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align: left;
+}
+
+.content_wrap{
+	padding-top:218px;
+	min-width:1200px;
+}
+
+.h3_tit{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 700;
+	font-size:1.875rem;
+	line-height:1.875rem;
+}
+
+.red{color:#8c0000;}
+
+/* HEADER */
+header{
+	position: fixed;
+	z-index: 9999;
+	width:100%;
+	height:218px;
+	vertical-align: middle;
+	background-color: #fff;|
+
+}
+header h1{
+	width:231px; 
+	height:44px;
+	background-image: url(../images/logo.png);
+	margin:0 auto;
+	color:transparent;
+}
+
+header .seoul_logo{
+	position: absolute;
+	top:58px;
+	width:110px;
+	height:40px;
+	background:url(../images/main_icon.png)no-repeat left top;
+	text-indent: -9999px;
+	left:0;
+}
+
+header .wrap{
+	position: relative;
+	width:1200px;
+	height:137px;
+	margin:0 auto;
+	padding-top:56px;
+	
+}
+
+header .input{
+	position: absolute;
+	display: inline-block;
+	top:20px;
+	right: 0;
+	vertical-align: middle;
+	display: flex;
+}
+
+header .input>li a{
+	font-size: 15px;
+	font-weight: 200;
+	color:#7e7e7e;
+	
+}
+
+header .input li:not(:last-child)::after{
+	content: '';
+	display: inline-block;
+	border-right: 1px solid #cccccc;
+	height: 14px;
+	padding-right:10px;
+	margin-right:10px;
+}
+
+
+
+header .menu{
+	height:80px;
+	vertical-align: middle;
+	margin:0 auto;
+}
+
+
+header .menu ul{
+	min-width:1043px;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	border-top:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+}
+
+header .menu li a{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:1.25rem;
+	line-height: 5rem;
+	font-weight: 500;
+	display: inline-block;
+
+}
+
+header .menu li:not(:last-child):after {
+	content: '';
+	border-right:1px solid #cccccc;
+	display: inline-block;
+	width:1px;
+	height: 20px;
+	padding-right:37px;
+	margin-right:37px;	
+}
+
+
+/* CONTENT */
+
+.package{
+	padding-top:110px;
+	height:864px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.packge_bg{
+	font-size: 9.375rem;
+	color:#f6f5fa;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	line-height: 124px;
+	padding-top:187px
+}
+
+.h2_tit{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 2.5rem;
+	text-align: center;
+	color:#010101;
+}
+.h2_tit span{
+	font-weight: 700;
+	color:#45478b;
+}
+
+.h2_tit::before {
+	content: 'seoul barun skin clinic';
+	display: block;
+	font-family:'Noto Sans KR', sans-serif;
+	font-size:0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.34em;
+	text-transform: uppercase;
+	color:#9192ad;
+}
+
+.pack_item{
+	padding:0 90px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top:248px;	
+}
+
+.pack_item .ellipse_frame, .pack_item .h3_tit,.pack_item p {
+	width:206px;
+}
+
+
+.pack_item li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	/* width:206px; */
+	
+}
+
+.ellipse_frame{
+	height: 283px;
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+}
+
+.pack_item li:nth-child(1) .ellipse_frame{
+	background: url(../images/img_model01.png) no-repeat bottom center/280PX;
+	background-color: #fffde4;
+}
+
+.pack_item li:nth-child(2) .ellipse_frame{
+	background: url(../images/img_model02.png) no-repeat bottom center;
+	background-color: #ede4f4;
+}
+
+.pack_item li:nth-child(3) .ellipse_frame{
+	background: url(../images/img_model03.png) no-repeat center 25px;
+	background-color: #f4edeb;
+}
+
+
+.pack_item .h3_tit::after{
+	content: '';
+	display: block;
+	border-bottom: 1px solid #c8c8c8;
+	height:1px;
+	padding-bottom:20px;
+}
+
+.h3_tit.padding{
+	padding:30px 0 20px;
+}
+
+.pack_item p{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.625rem;
+	color:#505050;
+}
+
+.pack_item .tag {
+	width:55%;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+	justify-content: center;
+	margin-top:20px;
+}
+
+.pack_item .tag li{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	color:#242424;
+	font-weight: 300;
+	display: inline;
+	background-color: #ede4f4;
+	padding:0 10px;
+	margin:0 5px 5px 0;
+	border-radius: 50px;
+	overflow:visible
+}
+
+
+.bar_box01{
+	height:370px;
+	max-width:1920px;
+	background: url(../images/bg2.png)no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: inset 0 16px 21px 0 rgba(0,0,0,0.16);
+	text-align: center;
+}
+
+.bar_box01 p{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size: 1.875rem;
+	font-weight: 400;
+	color:#ffffff;
+	letter-spacing: 0.5%;
+	padding-bottom:9px;
+}
+
+.bar_box01 .txt40 {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+/*S.전후사진 영역 */
+
+.bnf{
+	position: relative;
+	padding-top:110px;
+	height: 825px;
+	background-color: #ffffff;
+}
+
+.bnf_wrap {
+	width:100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	overflow: hidden;
+	margin:70px auto;
+	position: relative;
+}
+
+.bnf .bnf_box{
+	display: flex;
+	flex-direction: column;
+	width:646px;
+	margin:0 77px;
+	line-height: 20px;
+	opacity: 0.4;
+}
+
+.bnf_box.center{
+	opacity: 1;
+}
+
+.bnf_box p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:40px;
+}
+
+.bnf_box span{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color:#6d8fac;
+}
+
+.bnf_box i{
+	display: inline-block;
+	width:21px;
+	height:1px;
+	background: #cacaca;
+	margin:0 13px;
+}
+.bnf_box em{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size:1.25rem;
+	font-weight: 700;
+}
+
+.blackbox{
+	width:100%;
+	padding:14px 0;
+	position: absolute;
+	display: block;
+	bottom:0;
+	background-color:rgba(0, 0, 0, 0.6);
+	font-family:'Noto Sans KR', sans-serif;
+	font-size: 1.25rem ;
+	font-weight: 400;
+	color:#fff!important;
+}
+.bnf_img{
+	position: relative;
+	width:50%;
+	float:left;
+}
+
+
+
+
+.slide_arr{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width:646px;
+	top:50%;
+}
+
+.slide_arr span{
+	width:32px;
+	height:40px;
+	cursor:pointer;
+	transform: translate(0,-150%);
+}
+.slide_arr .arr_l{
+	position: absolute;
+	left:-10%;
+	background: url(../images/main_icon.png) no-repeat center center;
+	background-position: 0 -311px;
+}
+
+.slide_arr .arr_r{
+	position: absolute;
+	top:40%;
+	right:-10%;
+	background: url(../images/main_icon.png) no-repeat center center;
+	background-position: -33px -311px;
+}
+
+
+/* S. 의사소개 */
+
+.doctor{
+	height: 775px;
+	background: url(../images/bg_doctor.png) no-repeat center center / cover;
+	text-align: left;
+}
+
+.doctor .tit_doctor{
+	width:362px;
+	display: inline-block;
+	float:left;
+	letter-spacing: -0.04em;
+}
+
+.doctor .tit_doctor i{
+	width:116px;
+	height:114px;
+	display: block;
+	background: url(../images/main_icon.png)no-repeat left top;
+	background-position: 0 -128px;
+	margin:127px 0 25px;
+}
+
+.doctor .tit_doctor h2{
+	font-size: 2.813rem;
+	font-weight: 400;
+	color:#000;
+	line-height: 3.75rem;
+}
+
+.doctor .tit_doctor h2::after{
+	content: '';
+	display: block;
+	border-bottom:1px solid #dfeaf5;
+	width:403px;
+	height: 1px;
+	padding-bottom: 21px;
+	margin-bottom:23px;
+}
+
+.doctor .tit_doctor h2  strong{
+	font-size:3.75rem;
+	font-weight: 700;
+	color:#29417d;
+	line-height: 4.375rem;
+}
+
+.doctor .tit_doctor h2  em{
+	font-size:3.75rem;
+	font-weight: 700;
+	color:#272b33;
+}
+
+.doctor .inner_wrap{
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.img_doctor{
+	width:405px;
+	height:716px;
+	background: url(../images/img_doctor.png)no-repeat center bottom ;
+	text-indent: -99999px;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%, 0);
+	bottom:0;
+	
+}
+
+
+.tit_doctor p{
+	font-size: 1.125rem;
+	font-weight: 400;
+	letter-spacing: -0.045rem;
+	line-height: 1.75rem;
+	color:#666666;
+	width:436px;
+}
+
+.doctor .resume{
+	position: absolute;
+	left:850px;
+	top:247px;	
+}
+
+.doctor .resume .name{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size: 1.875rem;
+	line-height: 38px;
+	display: inline-block;
+	background-size: 87px 125px;
+	background: url(../images/bskin_logo.png) no-repeat left top;
+	}
+
+.doctor .resume .name:after{
+	content: '';
+	display: block;
+	border-bottom:1px solid #dfeaf5;
+	width:297px;
+	height: 1px;
+	padding-bottom: 21px;
+	margin-bottom:23px;
+}
+
+.name p, .name em, .name strong {
+	padding-left:120px;
+}
+
+.name p{
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.name em, strong{
+	display: block;
+	font-weight: 800;
+}
+
+.name strong{
+	line-height: 47px;;
+	font-size:2.5rem;
+	color:#5f66ae;
+}
+
+.name em{
+	color:#272b33;
+}
+
+.doctor_txt p:not(last-child){
+	color:#666666;
+	font-size: 1.125rem;
+	line-height: 1.125rem;
+	padding-bottom: 0.937rem;
+}
+
+.bar_box02{
+	min-width:1903px;
+	height: 739px;
+	background:url(../images/bg3.png) no-repeat center center /cover #e3dcd7;
+	text-align: center;
+	padding:160px 0 140px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bar_box02 .txt_right{
+	width:50%;
+	display: block;
+	left:calc(100%/2 - 20px);
+	position: absolute;
+	text-align: left;
+}
+
+.txt_wrap{
+	width:526px;
+}
+
+.tit50{
+	letter-spacing: -0.04rem;
+}
+
+.tit50>p{
+	font-size: 1.375rem;
+	font-weight: 400;
+	letter-spacing: -0.04rem;
+	color:#333333;
+	margin-bottom:9px;
+}
+
+.tit50 h2{
+	font-size: 3.125rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.tit50 h2 > em{
+	font-weight: 700;
+	color:#333333;
+}
+
+.tit50 h2 > span{
+	font-weight: 700;
+	color:#29417d;
+}
+
+
+.bar_box02 .check_wrap{
+	width:618px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-top:50px;
+}
+
+.bar_box02 .check_wrap h4{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.125rem;
+	font-weight: 600;
+	color:#29417d;
+	margin:20px 0;
+}
+
+.bar_box02 .check_wrap p{
+	font-size: 1.125rem;
+	color:#686868;
+}
+
+.check_box .img{
+	text-align: center;
+	display: inline-block;
+}
+
+.skin_box{
+	min-width:1903px;
+	height:999px;
+	background-color: #fff;
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:126px 0 136px;
+	margin:0 auto;
+	max-width: 1903px;
+}
+
+.skin_box .txt_wrap{
+	line-height: 1.3;
+	padding-bottom:53px;
+}
+.skin_box .left_wrap{
+	width:50.5%;
+}
+.skin_box .left_tit_wrap{
+	float: right;
+	margin-right: 6.095%;
+	padding-top:96px;
+}
+
+.skin_box .left_tit_wrap  ul li{
+	font-family:'Noto Sans KR', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.3;
+	color:#686868;
+	display: flex;
+}
+
+.skin_box .left_tit_wrap b{
+	font-weight: 700;
+}
+
+.skin_box .left_tit_wrap ul li:not(:last-child){
+	margin-bottom:38px;
+}
+
+/* .skin_box .ico_right{
+	width:64px;
+	height:64px;
+	background: url(../images/main_icon.png)no-repeat left top;
+} */
+
+.skin_box .left_tit_wrap .ico_right::before{
+	content: '';
+	display: inline-block;
+	background: url(../images/main_icon.png)no-repeat left top;
+	width:60px;
+	height:64px;
+	background-position: 0 -51px;
+	margin-right:43px;
+}
+
+.skin_box .left_tit_wrap .ico_safe::before{
+	content: '';
+	display: inline-block;
+	background: url(../images/main_icon.png)no-repeat left top;
+	width:60px;
+	height:64px;
+	background-position: -65px -45px;
+	margin-right:43px;
+}
+
+.skin_box .left_tit_wrap .ico_sterile::before{
+	content: '';
+	display: inline-block;
+	background: url(../images/main_icon.png)no-repeat left top;
+	width:60px;
+	height:64px;
+	background-position: -129px -46px;
+	margin-right:43px;
+}
+
+.skin_box .left_tit_wrap .ico_cure::before{
+	content: '';
+	background-position: 0 -105px;
+	display: inline-block;
+	background: url(../images/main_icon.png)no-repeat left top;
+	width:60px;
+	height:64px;
+	background-position: -192px -31px;
+	margin-right:43px;
+}
+
+
+.skin_box .img_box{
+	width:49.5%;
+	height: 734px;
+	background: url(../images/img_skin.png) right center/ cover;
+	background-color: #29417d;
+}
+
+.skin_box h2{
+	font-size:3.125rem;
+}
+
+/* 오시는길 */
+
+.infomation{
+	width:1903px;
+	font-family: 'Noto Sans KR', sans-serif;
+	height: 1091px;
+	display: flex;
+	margin:0 auto;
+	justify-content: center;
+}
+
+.infomation .inf_left{
+	width:65.212%;
+	max-width:1241px;
+	height: 100%;
+	border-top-right-radius: 25%;
+	padding:154px 173px 70px 0;
+	background-color: #eff4fa;
+}
+.infomation .inf_right{
+	width:34.788%;
+	display: inline-block;
+	background-color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	line-height: 1;
+	color:#eff4fa;
+	padding-top:130px;	
+}
+
+.infomation .inf_right .bg_txt{
+	width:660px;
+	padding-left:63px;
+	font-size:12.5rem;
+
+}
+
+.infomation .map_wrap.flex{
+	width:800px;
+	display: flex;
+}
+
+.infomation .map{
+	width:800px;
+	height:436px;
+	background-color: #fff;
+}
+.infomation .location{
+	width: 60.375%;
+}
+.time{
+	width:35.5%;
+}
+
+.infomation .adr{
+	display: inline-block;
+}
+
+.infomation h4{
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: #000;
+	padding-bottom:11px;
+}
+
+.infomation .tel{
+	display: inline-block;
+	float: left;
+}
+
+.infomation .tel p{
+	display: flex;
+	align-items: center;
+}
+
+.infomation .tel input{
+	height: 42px;
+	font-size:1.125rem;
+	color:#fff;
+	padding:0 27px;
+	border-radius: 50px;
+	line-height: 43px;
+	background-color: #45478b;
+	border: none;
+}
+
+.infomation .tel input:focus {outline:none;}
+
+.infomation .p_num{
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #45478b;
+	margin-right:26px;
+}
+
+
+.map_wrap.flex{
+	padding:50px 0 60px;
+}
+
+.map_wrap .b_bottom{
+	border-bottom: 1px solid #c9d0e1;
+	margin-bottom: 45px;
+}
+
+.infomation .adr{
+	padding-bottom:24px;
+}
+
+.time dt, dl{
+	font-size: 1.125rem;
+}
+
+.time dl{
+	display: flex;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	font-weight: 400;
+}
+	
+.infomation .time dt{
+	line-height: 1.83;
+	width:27.6%;
+	display: inline-block;
+	text-align-last: justify;
+	margin-right:49px;
+}
+
+.infomation .time dd{
+	line-height: 1.83;
+	display: inline-block;
+}
+
+.infomation .icon_wrap{
+	width:499px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.infomation li .icon_wrap span{
+	background-color: red;
+}
+
+
+.sns_round.sns_katalk{
+	background: url(../images/ico_sns.png);
+	width:60px;
+	height:60px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 13px 14px;
+}
+
+.sns_round.sns_facebook{
+	background: url(../images/ico_sns.png);
+	width:60px;
+	height:60px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: -58px 14px;
+}
+
+.sns_round.sns_story{
+	background: url(../images/ico_sns.png);
+	width:60px;
+	height:60px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: -127px 14px;
+}
+					
+.sns_round.sns_plus{
+	background: url(../images/ico_sns.png);
+	width:60px;
+	height:60px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: -196px 14px;
+	}
+			
+.sns_round.sns_cs{
+	background: url(../images/ico_sns.png);
+	width:60px;
+	height:60px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: -266px 14px;
+	}
+				
+					
+		
+
+.sns_round{
+	display: block;
+	border-radius: 50%;
+	text-indent: -9999px;
+	margin:0 auto 10px;
+}
+
+
+
+.infomation .icon_wrap ul{
+	line-height: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer{
+	position: relative;
+	height:243px;
+	padding:70px 0 80px;
+	display: block;
+	background-color:#fff;;
+}
+
+
+footer .inner_wrap{
+	display: flex;
+	flex-direction: row;
+	margin:0 auto;
+}
+footer .inner_wrap h3{
+	width:253px;
+	height: 48px;
+	background: url(../images/f_logo.png);
+	margin-right:7%;
+	text-indent: -99999px;
+}
+
+footer .inner_wrap .copyright{
+	width:45%;
+	display: block;
+	font-size:0.875rem;
+	line-height: 1.857;
+	color:#676767;
+}
