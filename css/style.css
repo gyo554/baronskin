@@ -390,6 +390,7 @@ header .menu li:not(:last-child):after {
 .bnf_img{
 	position: relative;
 	width:50%;
+	height:431px;
 	float:left;
 }
 
